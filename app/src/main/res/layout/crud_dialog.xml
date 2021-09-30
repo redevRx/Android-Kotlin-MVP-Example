@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="12dp"
+    android:background="@android:color/transparent">
+    <androidx.cardview.widget.CardView
+        android:layout_width="410dp"
+        android:layout_height="420dp"
+        app:cardCornerRadius="20dp"
+        android:elevation="22dp"
+        android:padding="12dp"
+        android:outlineSpotShadowColor="@android:color/black"
+        android:layout_centerInParent="true"
+        app:cardBackgroundColor="@color/white">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/btnCloseDialog"
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="12dp"
+                android:src="@drawable/ic_baseline_close_24"
+                android:background="@android:color/transparent"
+                />
+
+<!--            show text anime info -->
+            <TextView
+                android:id="@+id/txtAnime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Anime Info"
+                android:gravity="center"
+                android:textSize="18sp"/>
+
+<!--            edit test name anime -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/AnimeName"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="210dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtAnime"
+                android:layout_marginTop="22dp"
+                android:layout_centerHorizontal="true"
+                app:boxCornerRadiusTopStart="18dp"
+                app:boxCornerRadiusBottomEnd="18dp"
+                android:elevation="12dp">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txtAnimeName"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:inputType="text"
+                    android:hint="Name">
+
+                </com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <!--            edit test descript anime -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/AnimeDescript"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="210dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/AnimeName"
+                android:layout_marginTop="8dp"
+                android:layout_centerHorizontal="true"
+                app:boxCornerRadiusTopStart="18dp"
+                app:boxCornerRadiusBottomEnd="18dp"
+                android:elevation="12dp">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txtAnimeDescript"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:inputType="textLongMessage|textMultiLine"
+                    android:hint="Descript">
+
+                </com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!--            edit test rating anime -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/AnimeRating"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="210dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/AnimeDescript"
+                android:layout_marginTop="8dp"
+                android:layout_centerHorizontal="true"
+                app:boxCornerRadiusTopStart="18dp"
+                app:boxCornerRadiusBottomEnd="18dp"
+                android:elevation="12dp">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txtAnimeRating"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:inputType="textLongMessage|textMultiLine"
+                    android:hint="Rating">
+
+                </com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!--            edit test price anime -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/AnimePrice"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="210dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/AnimeRating"
+                android:layout_marginTop="8dp"
+                android:layout_centerHorizontal="true"
+                app:boxCornerRadiusTopStart="18dp"
+                app:boxCornerRadiusBottomEnd="18dp"
+                android:elevation="12dp">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txtAnimePrice"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:inputType="textLongMessage|textMultiLine"
+                    android:hint="Price">
+
+                </com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!--            edit test Url anime -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/AnimeUrl"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="210dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/AnimePrice"
+                android:layout_marginTop="8dp"
+                android:layout_centerHorizontal="true"
+                app:boxCornerRadiusTopStart="18dp"
+                app:boxCornerRadiusBottomEnd="18dp"
+                android:elevation="12dp">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txtAnimeUrl"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:inputType="textLongMessage|textMultiLine"
+                    android:hint="Url">
+
+                </com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+<!--            make btn save data -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnSaveAnime"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Save"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="32sp"
+                android:backgroundTint="@color/redevBlue"
+                android:layout_below="@id/AnimeUrl"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
